@@ -1,0 +1,43 @@
+:root {
+  /* Core palette — continues 2_site Blackwood brand */
+  --graphite: #141414;
+  --charcoal-surface: #1f1d1b;
+  --charcoal-surface-2: #262320;
+  --brass: #c9a24b;
+  --brass-dark: #a9822f;
+  --bone: #f2efea;
+  --bone-dim: #a9a29a;
+  --border-soft: #332f29;
+
+  /* Status colors — new for this dashboard-driven project */
+  --moss: #4c7a5e;
+  --moss-dim: #35543f;
+  --rust: #b0503a;
+  --rust-dim: #7c3826;
+
+  /* Type */
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+
+  /* Scale */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 2px 14px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 16px 40px rgba(0, 0, 0, 0.5);
+
+  --header-h: 72px;
+  --container-w: 1180px;
+
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

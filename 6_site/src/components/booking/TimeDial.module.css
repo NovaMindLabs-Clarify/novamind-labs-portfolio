@@ -1,0 +1,117 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.toggle {
+  display: flex;
+  gap: 8px;
+}
+.toggle button {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border-soft);
+  background: transparent;
+  color: var(--bone-dim);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+.toggle button.active {
+  border-color: var(--brass);
+  color: var(--brass);
+}
+
+/* --- Dial view (signature element) --- */
+.dialOuter {
+  position: relative;
+  width: min(340px, 82vw);
+  height: min(340px, 82vw);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, #2a2620, var(--charcoal-surface) 60%);
+  border: 6px solid var(--brass-dark);
+  box-shadow: var(--shadow-md), inset 0 0 30px rgba(0,0,0,0.5);
+}
+.dialFace {
+  position: absolute;
+  inset: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 162, 75, 0.25);
+}
+.dialCenter {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 10px; height: 10px;
+  margin: -5px 0 0 -5px;
+  background: var(--brass);
+  border-radius: 50%;
+  z-index: 3;
+}
+.hand {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 2px;
+  background: var(--brass);
+  transform-origin: top center;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.mark {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  border-radius: 50%;
+  border: 1.5px solid var(--brass-dark);
+  background: var(--charcoal-surface-2);
+  color: var(--bone);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+  text-align: center;
+  white-space: pre-line;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.mark:hover:not(:disabled) { transform: scale(1.12); border-color: var(--brass); }
+.mark.selected { background: var(--brass); color: #1a1a1a; border-color: var(--brass); font-weight: 700; }
+.mark:disabled {
+  opacity: 0.28;
+  border-color: var(--rust-dim);
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+/* --- List view / mobile fallback --- */
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+.listItem {
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-soft);
+  background: var(--charcoal-surface-2);
+  color: var(--bone);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  text-align: center;
+}
+.listItem:hover:not(:disabled) { border-color: var(--brass); }
+.listItem.selected { background: var(--brass); color: #1a1a1a; border-color: var(--brass); font-weight: 700; }
+.listItem:disabled { opacity: 0.35; cursor: not-allowed; text-decoration: line-through; }
+
+@media (max-width: 640px) {
+  .dialOuter { display: none; }
+}
+@media (min-width: 641px) {
+  .list.hiddenOnDial { display: none; }
+}

@@ -1,0 +1,127 @@
+.wizard {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.stepper {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 40px;
+}
+.stepDot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 18px;
+  position: relative;
+}
+.stepDot:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  width: 24px;
+  height: 1px;
+  background: var(--border-soft);
+}
+.stepNum {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-soft);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--bone-dim);
+  flex-shrink: 0;
+}
+.stepDot.active .stepNum { border-color: var(--brass); color: var(--brass); background: rgba(201,162,75,0.12); }
+.stepDot.done .stepNum { border-color: var(--moss); color: var(--moss); background: rgba(76,122,94,0.12); }
+.stepLabel {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--bone-dim);
+  letter-spacing: 0.03em;
+}
+.stepDot.active .stepLabel { color: var(--bone); }
+
+.panel {
+  min-height: 320px;
+}
+
+.grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+.choiceCard {
+  text-align: left;
+  padding: 18px;
+  cursor: pointer;
+  color: var(--bone);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.choiceCard:hover { border-color: var(--brass); transform: translateY(-2px); }
+.choiceCard.selected { border-color: var(--brass); background: rgba(201, 162, 75, 0.08); }
+
+.serviceTop { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+.serviceName { font-family: var(--font-display); text-transform: uppercase; font-size: 0.95rem; }
+.servicePrice { font-family: var(--font-mono); color: var(--brass); font-weight: 600; }
+.serviceMeta { font-size: 0.8rem; color: var(--bone-dim); }
+
+.barberCard { display: flex; align-items: center; gap: 12px; }
+.barberPhoto { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.barberName { font-family: var(--font-display); text-transform: uppercase; font-size: 0.9rem; }
+.barberRole { font-size: 0.76rem; color: var(--bone-dim); }
+.barberNext { font-family: var(--font-mono); font-size: 0.72rem; color: var(--brass); margin-top: 4px; }
+
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.tabs button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border-soft);
+  background: transparent;
+  color: var(--bone-dim);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+.tabs button.active { border-color: var(--brass); color: var(--brass); }
+
+.dayStrip { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 24px; }
+.dayBtn {
+  flex: 0 0 auto;
+  width: 56px;
+  padding: 10px 0;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-soft);
+  background: var(--charcoal-surface);
+  color: var(--bone);
+  text-align: center;
+  font-family: var(--font-mono);
+}
+.dayBtn.active { border-color: var(--brass); background: rgba(201,162,75,0.1); }
+.dayWeekday { display: block; font-size: 0.68rem; color: var(--bone-dim); text-transform: uppercase; }
+.dayNum { display: block; font-size: 1.05rem; font-weight: 600; margin-top: 2px; }
+
+.formRow { margin-bottom: 16px; text-align: left; }
+.formRow label { display: block; font-size: 0.8rem; color: var(--bone-dim); margin-bottom: 6px; }
+.formRow input, .formRow textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-soft);
+  background: var(--charcoal-surface-2);
+  color: var(--bone);
+  font-size: 0.92rem;
+}
+.formRow input:focus, .formRow textarea:focus { outline: none; border-color: var(--brass); }
+
+.footerNav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+.summaryBox {
+  margin-top: 8px;
+}

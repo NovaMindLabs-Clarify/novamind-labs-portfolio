@@ -1,0 +1,84 @@
+.wrap {
+  position: relative;
+  width: min(360px, 78vw);
+  height: min(360px, 78vw);
+  flex-shrink: 0;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 26%, #2b2721 0%, var(--charcoal-surface) 58%, #100f0d 100%);
+  border: 7px solid var(--brass-dark);
+  box-shadow: var(--shadow-md), inset 0 0 40px rgba(0, 0, 0, 0.55);
+  position: relative;
+}
+
+.ring {
+  position: absolute;
+  inset: 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 162, 75, 0.28);
+}
+
+.tick {
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  margin: -6px 0 0 -1px;
+  background: rgba(201, 162, 75, 0.55);
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  background: var(--brass);
+  border-radius: 50%;
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(201, 162, 75, 0.6);
+}
+
+.hourHand, .minuteHand, .secondHand {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 3px;
+  /* The element's own top edge sits at the face's center (top: 50%),
+     so the rotation pivot must be that top edge, not the bottom. */
+  transform-origin: 50% 0%;
+  z-index: 2;
+}
+.hourHand { width: 5px; height: 26%; background: var(--brass); margin-left: -2.5px; }
+.minuteHand { width: 3px; height: 36%; background: var(--bone); margin-left: -1.5px; }
+.secondHand {
+  width: 1.5px; height: 40%; background: var(--rust); margin-left: -0.75px;
+  animation: sweep 60s linear infinite;
+}
+
+@keyframes sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.wordmark {
+  position: absolute;
+  left: 50%;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--bone-dim);
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .secondHand { animation: none; }
+}

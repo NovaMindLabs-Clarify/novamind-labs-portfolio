@@ -1,0 +1,29 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sidebar a {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--bone-dim);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+.sidebar a.active, .sidebar a:hover {
+  background: rgba(201, 162, 75, 0.1);
+  color: var(--brass);
+}
+
+@media (max-width: 768px) {
+  .wrap { grid-template-columns: 1fr; }
+  .sidebar { flex-direction: row; overflow-x: auto; }
+}
