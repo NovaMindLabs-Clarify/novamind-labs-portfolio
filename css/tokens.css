@@ -1,0 +1,41 @@
+:root {
+  /* Palette — "observatory at night" + "lab specimen index" */
+  --ink: #0A0B0D;
+  --ink-2: #0F1114;
+  --panel: #14161A;
+  --panel-2: #1B1E23;
+  --paper: #ECEAE4;
+  --signal: #FF5A2E;
+  --signal-dim: #B8451F;
+  --wire: #3A3F47;
+  --wire-soft: #24272C;
+  --ok: #5FD4A0;
+  --text: #ECEAE4;
+  --text-dim: #9A9EA6;
+  --text-faint: #5C6068;
+
+  --font-display: 'Space Grotesk', 'Arial', sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+
+  --shadow-sm: 0 2px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
+
+  --header-h: 76px;
+  --container-w: 1240px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

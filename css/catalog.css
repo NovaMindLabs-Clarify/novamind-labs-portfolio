@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Featured Work — "catalog" page-flip mechanic
+   Desktop: pinned, GSAP-driven page-flip transitions between .catalog-page
+   Mobile / reduced-motion: plain vertical stack (see .catalog--mobile)
+   ========================================================================== */
+
+.catalog { position: relative; }
+
+.catalog-progress {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.catalog-progress .bar { width: 60px; height: 2px; background: var(--wire); position: relative; overflow: hidden; }
+.catalog-progress .bar::after {
+  content: ""; position: absolute; inset: 0; background: var(--signal);
+  transform: scaleX(var(--catalog-progress, 0)); transform-origin: left; transition: transform 0.3s ease;
+}
+
+.catalog-stack {
+  position: relative;
+  height: 520px;
+  perspective: 1600px;
+}
+
+.catalog-page {
+  position: absolute;
+  inset: 0;
+  background: var(--panel);
+  border: 1px solid var(--wire-soft);
+  border-radius: var(--radius-lg);
+  padding: clamp(28px, 4vw, 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.catalog-page .page-num { font-family: var(--font-mono); color: var(--signal); font-size: 0.85rem; margin-bottom: 18px; }
+.catalog-page h3 { font-size: clamp(1.5rem, 3vw, 2.2rem); max-width: 520px; }
+.catalog-page p { max-width: 480px; font-size: 0.98rem; }
+.catalog-page .tags { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0 26px; }
+.catalog-page .tags span { font-family: var(--font-mono); font-size: 0.7rem; padding: 4px 10px; border: 1px solid var(--wire); border-radius: 999px; color: var(--text-dim); }
+.catalog-page .cta { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 600; color: var(--signal); }
+
+.catalog-page.is-lab { border-style: dashed; border-color: var(--wire); }
+.catalog-page.is-lab .page-num { color: var(--text-faint); }
+.catalog-page.is-lab h3 { color: var(--text-dim); }
+
+.catalog-hint {
+  margin-top: 18px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-faint);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Mobile / reduced-motion fallback: plain vertical list, no absolute stacking */
+.catalog--mobile .catalog-stack { height: auto; perspective: none; display: flex; flex-direction: column; gap: 20px; }
+.catalog--mobile .catalog-page { position: static; inset: auto; opacity: 1 !important; transform: none !important; }
+.catalog--mobile .catalog-progress, .catalog--mobile .catalog-hint { display: none; }
+
+@media (max-width: 1023px) {
+  .catalog-stack { height: auto; }
+}

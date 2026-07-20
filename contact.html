@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — NovaMind Labs</title>
+<meta name="description" content="Start a project with NovaMind Labs — email, GitHub, LinkedIn, Telegram, or send a message directly.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0B0D'/%3E%3Cpath d='M16 5 L18.4 13.6 L27 16 L18.4 18.4 L16 27 L13.6 18.4 L5 16 L13.6 13.6 Z' fill='%23FF5A2E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css">
+</head>
+<body data-title-key="meta.contact.title">
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5 L18.4 13.6 L27 16 L18.4 18.4 L16 27 L13.6 18.4 L5 16 L13.6 13.6 Z" fill="#FF5A2E"/></svg>
+      NovaMind Labs
+    </a>
+    <nav class="nav-links">
+      <a href="/work.html" data-i18n="nav.work">Work</a>
+      <a href="/about.html" data-i18n="nav.about">About</a>
+      <a href="/contact.html" class="is-active" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="/work.html" data-i18n="nav.work">Work</a>
+  <a href="/about.html" data-i18n="nav.about">About</a>
+  <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch" style="margin-top:10px">
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="ru">RU</button>
+  </div>
+</nav>
+
+<main>
+  <section class="section" style="padding-top:calc(var(--header-h) + 72px)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="status-dot"></span><span data-i18n="status.available">Available for new projects</span></span>
+        <h1 data-i18n="contact.title">Start a project</h1>
+        <p data-i18n="contact.lead">Tell me what you're building. I reply within a day.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="reveal" data-form novalidate>
+          <div class="form-row">
+            <label for="name" data-i18n="contact.form.name">Your name</label>
+            <input id="name" name="name" type="text" required data-i18n-placeholder="contact.form.namePh" placeholder="Jane Doe">
+          </div>
+          <div class="form-row">
+            <label for="email" data-i18n="contact.form.email">Email</label>
+            <input id="email" name="email" type="email" required data-i18n-placeholder="contact.form.emailPh" placeholder="jane@email.com">
+          </div>
+          <div class="form-row">
+            <label for="message" data-i18n="contact.form.message">What are you building?</label>
+            <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact.form.messagePh" placeholder="A booking site for my salon, live in two weeks…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-magnetic data-i18n="contact.form.submit">Send Message</button>
+          <p style="font-size:0.78rem; color:var(--text-faint); margin-top:12px" data-i18n="contact.form.note">No backend behind this form yet — it opens your email client via mailto:, or write directly to the address below.</p>
+          <div class="form-success"><span>✓</span><span data-i18n="contact.form.success">Thanks — your message is ready in your email client.</span></div>
+        </form>
+
+        <div class="reveal card" style="padding:36px">
+          <h3 class="eyebrow" data-i18n="contact.direct.title" style="font-size:0.8rem">Direct</h3>
+          <div class="footer-links" style="margin-top:20px">
+            <a href="mailto:clarify.plan@mail.ru"><span class="idx mono">01</span> <span data-i18n="contact.direct.email">Email</span> — clarify.plan@mail.ru</a>
+            <a href="https://github.com/NovaMindLabs-Clarify" target="_blank" rel="noopener"><span class="idx mono">02</span> <span data-i18n="contact.direct.github">GitHub</span> — NovaMindLabs-Clarify</a>
+            <a href="https://www.linkedin.com/in/nikita-ferapontov-b7b162423" target="_blank" rel="noopener"><span class="idx mono">03</span> <span data-i18n="contact.direct.linkedin">LinkedIn</span> — nikita-ferapontov</a>
+            <a href="https://t.me/lvskkyy" target="_blank" rel="noopener"><span class="idx mono">04</span> <span data-i18n="contact.direct.telegram">Telegram</span> — @lvskkyy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 NovaMind Labs.</span>
+      <span data-i18n="footer.tagline">Software with the same discipline, at every scale.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/i18n.js"></script>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>

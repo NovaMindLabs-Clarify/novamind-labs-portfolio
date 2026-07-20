@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ChairTime Case Study — NovaMind Labs</title>
+<meta name="description" content="How NovaMind Labs turned a template barbershop landing page into ChairTime, a real booking platform with client, staff and admin roles.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0B0D'/%3E%3Cpath d='M16 5 L18.4 13.6 L27 16 L18.4 18.4 L16 27 L13.6 18.4 L5 16 L13.6 13.6 Z' fill='%23FF5A2E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css">
+</head>
+<body data-title-key="meta.chairtime.title">
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5 L18.4 13.6 L27 16 L18.4 18.4 L16 27 L13.6 18.4 L5 16 L13.6 13.6 Z" fill="#FF5A2E"/></svg>
+      NovaMind Labs
+    </a>
+    <nav class="nav-links">
+      <a href="/work.html" class="is-active" data-i18n="nav.work">Work</a>
+      <a href="/about.html" data-i18n="nav.about">About</a>
+      <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="/contact.html" class="btn btn-primary" data-magnetic data-i18n="nav.cta">Get in Touch</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="/work.html" data-i18n="nav.work">Work</a>
+  <a href="/about.html" data-i18n="nav.about">About</a>
+  <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch" style="margin-top:10px">
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="ru">RU</button>
+  </div>
+</nav>
+
+<main>
+  <section class="section" style="padding-top:calc(var(--header-h) + 72px); padding-bottom:0">
+    <div class="container" style="max-width:760px">
+      <a href="/work.html" class="mono" style="color:var(--text-dim); font-size:0.82rem" data-i18n="case.back">← All work</a>
+      <div class="reveal" style="margin-top:24px">
+        <span class="eyebrow" data-i18n="case.eyebrow">Case Study</span>
+        <h1 style="font-size:clamp(2.2rem,5vw,3.4rem)" data-i18n="case.title">ChairTime</h1>
+        <p class="lead" style="font-size:1.1rem" data-i18n="case.subtitle">A real booking system, not just a landing page</p>
+      </div>
+
+      <div class="case-note reveal">
+        <span data-i18n="case.disclaimer">Self-directed portfolio case study based on a hypothetical brief — not a paid client engagement. No fabricated testimonials.</span>
+      </div>
+
+      <dl class="case-meta reveal">
+        <div><dt data-i18n="case.meta.niche.label">Niche</dt><dd data-i18n="case.meta.niche.value">Barbershop &amp; salon booking</dd></div>
+        <div><dt data-i18n="case.meta.type.label">Type</dt><dd data-i18n="case.meta.type.value">Booking platform (client + staff + admin)</dd></div>
+        <div><dt data-i18n="case.meta.role.label">Role</dt><dd data-i18n="case.meta.role.value">Solo design &amp; development</dd></div>
+        <div><dt data-i18n="case.meta.stack.label">Stack</dt><dd data-i18n="case.meta.stack.value">React, TypeScript, Vite, Zustand</dd></div>
+      </dl>
+
+      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-bottom:56px" class="reveal">
+        <a href="/6_site/dist/index.html" class="btn btn-primary" data-magnetic data-i18n="case.links.demo">Live demo</a>
+        <a href="https://github.com/NovaMindLabs-Clarify" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="case.links.github">GitHub</a>
+        <a href="/2_site/index.html" class="btn btn-ghost" data-i18n="case.links.template">Original template: Blackwood Barbershop</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="case-section reveal">
+        <h3 data-i18n="case.context.title">Context</h3>
+        <p data-i18n="case.context.body">Blackwood Barbershop already exists in this portfolio as a template landing page. ChairTime asks: what does this same shop need once a static page stops being enough?</p>
+      </div>
+      <div class="case-section reveal">
+        <h3 data-i18n="case.challenge.title">Challenge</h3>
+        <p data-i18n="case.challenge.body">A landing page can list hours and services. It can't let four barbers manage independent schedules, let a client book a specific barber at a specific time, or give the owner a single view of the whole shop's day. That's a different category of software.</p>
+      </div>
+      <div class="case-section reveal">
+        <h3 data-i18n="case.approach.title">Approach</h3>
+        <p data-i18n="case.approach.body">Three roles, one shared data model — a client booking flow, a per-barber staff dashboard, and a shop-wide admin dashboard, all reading from the same appointment state. Booking availability is computed live from each barber's working hours and existing appointments, not hardcoded.</p>
+      </div>
+      <div class="case-section reveal">
+        <h3 data-i18n="case.solution.title">Solution</h3>
+        <ul>
+          <li data-i18n="case.solution.1">4-step booking wizard with a radial time picker, with a full keyboard/list-view fallback for accessibility</li>
+          <li data-i18n="case.solution.2">Role-based dashboards: Client / Staff / Admin, switchable in a demo mode labeled honestly as a demo</li>
+          <li data-i18n="case.solution.3">Admin can manage services, staff working hours, and any booking — changes reflect in client-facing availability immediately</li>
+          <li data-i18n="case.solution.4">Bilingual EN/RU, persisted state via localStorage</li>
+        </ul>
+      </div>
+      <div class="case-section reveal">
+        <h3 data-i18n="case.results.title">Results</h3>
+        <p style="font-size:0.82rem; font-style:italic" data-i18n="case.results.note">Designed-for outcomes — no real traffic to report.</p>
+        <ul>
+          <li data-i18n="case.results.1">Reduces booking from a phone call to a ~90-second flow</li>
+          <li data-i18n="case.results.2">Eliminates double-booking via per-staff availability locking</li>
+        </ul>
+      </div>
+      <div class="case-section reveal">
+        <h3 data-i18n="case.next.title">What I'd build next</h3>
+        <p data-i18n="case.next.body">A real backend (Supabase/Firebase), real SMS/email confirmations, payment collection for deposits.</p>
+      </div>
+
+      <div class="reveal" style="text-align:center; margin-top:64px">
+        <a href="/6_site/dist/index.html" class="btn btn-primary" data-magnetic data-i18n="case.cta">Open the live demo →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-status"><span class="status-dot"></span><span data-i18n="status.available">Available for new projects</span></div>
+        <div class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5 L18.4 13.6 L27 16 L18.4 18.4 L16 27 L13.6 18.4 L5 16 L13.6 13.6 Z" fill="#FF5A2E"/></svg>NovaMind Labs</div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:clarify.plan@mail.ru"><span class="idx mono">01</span> clarify.plan@mail.ru</a>
+        <a href="https://github.com/NovaMindLabs-Clarify" target="_blank" rel="noopener"><span class="idx mono">02</span> GitHub</a>
+        <a href="https://www.linkedin.com/in/nikita-ferapontov-b7b162423" target="_blank" rel="noopener"><span class="idx mono">03</span> LinkedIn</a>
+        <a href="https://t.me/lvskkyy" target="_blank" rel="noopener"><span class="idx mono">04</span> Telegram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 NovaMind Labs.</span>
+      <span data-i18n="footer.tagline">Software with the same discipline, at every scale.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/i18n.js"></script>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>

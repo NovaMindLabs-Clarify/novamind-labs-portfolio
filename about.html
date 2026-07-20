@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — NovaMind Labs</title>
+<meta name="description" content="NovaMind Labs is a one-person studio building for two kinds of ambition: fast, affordable sites and fully engineered platforms.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0B0D'/%3E%3Cpath d='M16 5 L18.4 13.6 L27 16 L18.4 18.4 L16 27 L13.6 18.4 L5 16 L13.6 13.6 Z' fill='%23FF5A2E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css">
+</head>
+<body data-title-key="meta.about.title">
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5 L18.4 13.6 L27 16 L18.4 18.4 L16 27 L13.6 18.4 L5 16 L13.6 13.6 Z" fill="#FF5A2E"/></svg>
+      NovaMind Labs
+    </a>
+    <nav class="nav-links">
+      <a href="/work.html" data-i18n="nav.work">Work</a>
+      <a href="/about.html" class="is-active" data-i18n="nav.about">About</a>
+      <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="/contact.html" class="btn btn-primary" data-magnetic data-i18n="nav.cta">Get in Touch</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="/work.html" data-i18n="nav.work">Work</a>
+  <a href="/about.html" data-i18n="nav.about">About</a>
+  <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch" style="margin-top:10px">
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="ru">RU</button>
+  </div>
+</nav>
+
+<main>
+  <section class="section" style="padding-top:calc(var(--header-h) + 72px)">
+    <div class="container spec-grid">
+      <dl class="spec-list reveal">
+        <dt data-i18n="about.role.label">Role</dt><dd data-i18n="about.role.value">Solo full-stack studio</dd>
+        <dt data-i18n="about.stack.label">Stack</dt><dd data-i18n="about.stack.value">React · TypeScript · Vite · vanilla JS/CSS where it's the right call · GSAP · Node</dd>
+        <dt data-i18n="about.focus.label">Focus</dt><dd data-i18n="about.focus.value">Local-business tooling — booking, ordering, small platforms</dd>
+        <dt data-i18n="about.based.label">Based in</dt><dd data-i18n="about.based.value">Remote-first</dd>
+      </dl>
+      <div class="about-prose reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+        <h1 data-i18n="about.title">One studio, two kinds of problem</h1>
+        <p data-i18n="about.p1">NovaMind Labs is a one-person studio that treats a $600 landing page and a role-based booking platform as the same kind of problem: understand the business, cut anything that doesn't earn its place, ship something that works on the first day and holds up on the hundredth.</p>
+        <p data-i18n="about.p2">The templates in this portfolio exist because most local businesses are over-served by agencies and under-served by templates. The platforms exist because some of those same businesses eventually outgrow a landing page — ChairTime is what that upgrade looks like in practice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow" style="justify-content:center" data-i18n="process.eyebrow">Process</span>
+        <h2 data-i18n="process.title">How a project actually goes</h2>
+      </div>
+      <div class="process-steps reveal">
+        <div class="process-step"><div class="num mono">01</div><h4 data-i18n="process.1.title">Scope</h4><p data-i18n="process.1.desc">What does this actually need to do — not what's trendy.</p></div>
+        <div class="process-step"><div class="num mono">02</div><h4 data-i18n="process.2.title">Build</h4><p data-i18n="process.2.desc">Working software early, not a static mockup you can't feel.</p></div>
+        <div class="process-step"><div class="num mono">03</div><h4 data-i18n="process.3.title">Ship</h4><p data-i18n="process.3.desc">Live, on your domain or ours, with a plan for what's next.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="skills.eyebrow">Skills</span>
+        <h2 data-i18n="skills.title">What's under the hood</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skills-col">
+          <h3 data-i18n="skills.col1.title">Frontend</h3>
+          <div class="skill-item"><strong data-i18n="skills.1.name">React &amp; TypeScript</strong><span data-i18n="skills.1.desc">Role-based dashboards, complex form state (ChairTime)</span></div>
+          <div class="skill-item"><strong data-i18n="skills.2.name">Vanilla HTML/CSS/JS</strong><span data-i18n="skills.2.desc">Zero-build sites where speed-to-launch matters</span></div>
+          <div class="skill-item"><strong data-i18n="skills.3.name">GSAP &amp; Lenis</strong><span data-i18n="skills.3.desc">Scroll-driven interaction, motion design</span></div>
+        </div>
+        <div class="skills-col">
+          <h3 data-i18n="skills.col2.title">Backend &amp; Platforms</h3>
+          <div class="skill-item"><strong data-i18n="skills.4.name">Node.js</strong><span data-i18n="skills.4.desc">Lightweight services, tooling</span></div>
+          <div class="skill-item"><strong data-i18n="skills.5.name">State modeling</strong><span data-i18n="skills.5.desc">Booking/inventory/status logic, with or without a real backend</span></div>
+          <div class="skill-item"><strong data-i18n="skills.6.name">i18n architecture</strong><span data-i18n="skills.6.desc">Bilingual EN/RU by default across every project</span></div>
+        </div>
+        <div class="skills-col">
+          <h3 data-i18n="skills.col3.title">Process &amp; Craft</h3>
+          <div class="skill-item"><strong data-i18n="skills.7.name">Accessibility</strong><span data-i18n="skills.7.desc">Keyboard-first flows, reduced-motion support</span></div>
+          <div class="skill-item"><strong data-i18n="skills.8.name">Design systems</strong><span data-i18n="skills.8.desc">Token-based palettes/type scales per project</span></div>
+          <div class="skill-item"><strong data-i18n="skills.9.name">Client communication</strong><span data-i18n="skills.9.desc">Scoping, async updates, honest tradeoffs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container" style="text-align:center">
+      <div class="reveal">
+        <h2 data-i18n="contact.title">Start a project</h2>
+        <a href="/contact.html" class="btn btn-primary" data-magnetic data-i18n="nav.cta">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-status"><span class="status-dot"></span><span data-i18n="status.available">Available for new projects</span></div>
+        <div class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5 L18.4 13.6 L27 16 L18.4 18.4 L16 27 L13.6 18.4 L5 16 L13.6 13.6 Z" fill="#FF5A2E"/></svg>NovaMind Labs</div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:clarify.plan@mail.ru"><span class="idx mono">01</span> clarify.plan@mail.ru</a>
+        <a href="https://github.com/NovaMindLabs-Clarify" target="_blank" rel="noopener"><span class="idx mono">02</span> GitHub</a>
+        <a href="https://www.linkedin.com/in/nikita-ferapontov-b7b162423" target="_blank" rel="noopener"><span class="idx mono">03</span> LinkedIn</a>
+        <a href="https://t.me/lvskkyy" target="_blank" rel="noopener"><span class="idx mono">04</span> Telegram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 NovaMind Labs.</span>
+      <span data-i18n="footer.tagline">Software with the same discipline, at every scale.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/i18n.js"></script>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>
