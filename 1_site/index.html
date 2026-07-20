@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js-reveal');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copper Cup Coffee — Small-Batch Roastery &amp; Café</title>
+<meta name="description" content="Copper Cup Coffee is a small-batch roastery and café serving hand-crafted coffee, fresh pastries and all-day breakfast in the heart of downtown.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%234A2E1F'/%3E%3Ctext x='50' y='66' font-size='55' text-anchor='middle' fill='%23C97C3D' font-family='Georgia,serif'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#top" class="logo">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="15" fill="#4A2E1F"/><path d="M9 12h11v6a5.5 5.5 0 0 1-5.5 5.5h-1A5.5 5.5 0 0 1 9 18v-6z" fill="#FBF6EE"/><path d="M20 13h1.5a2.5 2.5 0 0 1 0 5H20" stroke="#FBF6EE" stroke-width="1.4"/></svg>
+      Copper Cup
+    </a>
+
+    <nav class="nav-links">
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Order Online</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="#menu" data-i18n="nav.menu">Menu</a>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+  <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch lang-switch-mobile">
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="ru">RU</button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="https://picsum.photos/seed/coppercup-hero/1800/1200" alt="Coffee being poured at Copper Cup">
+    <div class="container">
+      <span class="eyebrow" style="color:#E8B27C" data-i18n="hero.eyebrow">Roasted Daily Since 2012</span>
+      <h1 data-i18n="hero.title">Great Coffee, Warm Mornings</h1>
+      <p class="lead" data-i18n="hero.lead">Small-batch roasted beans, fresh pastries and a cozy corner to slow down — right in the heart of downtown.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary" data-i18n="hero.cta1">View Menu</a>
+        <a href="#contact" class="btn btn-light" data-i18n="hero.cta2">Order To Go</a>
+      </div>
+    </div>
+    <div class="scroll-cue"><span data-i18n="hero.scroll">Scroll</span><span class="dot"></span></div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-item"><div class="num" data-i18n="trust.1num">12+</div><div class="label" data-i18n="trust.1label">Years Roasting</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.2num">2,000+</div><div class="label" data-i18n="trust.2label">Cups Served Daily</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.3num">4.9★</div><div class="label" data-i18n="trust.3label">Google Rating</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.4num">18</div><div class="label" data-i18n="trust.4label">Origins Sourced</div></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">Our Story</span>
+        <h2 data-i18n="about.title">Coffee that starts with a relationship, not a bag of beans</h2>
+        <p data-i18n="about.p1">Copper Cup started in 2012 as a single roaster in a garage. Today we work directly with farms across three continents, roast in small batches every morning, and pour every cup by hand.</p>
+        <p data-i18n="about.p2">No shortcuts, no syrupy blends — just honest coffee, baked goods made from scratch, and a space that feels like your second living room.</p>
+        <a href="#gallery" class="btn btn-secondary" data-i18n="about.cta">Meet the Team</a>
+      </div>
+      <img class="reveal" src="https://picsum.photos/seed/coppercup-about/900/1000" alt="Barista roasting coffee beans">
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section section-alt" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="menu.eyebrow">What We Serve</span>
+        <h2 data-i18n="menu.title">Menu</h2>
+        <p data-i18n="menu.subtitle">A short, seasonal menu built around quality beans and local ingredients.</p>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="menu-tab is-active" data-tab="coffee" data-i18n="menu.tab.coffee">Coffee</button>
+        <button class="menu-tab" data-tab="pastries" data-i18n="menu.tab.pastries">Pastries</button>
+        <button class="menu-tab" data-tab="breakfast" data-i18n="menu.tab.breakfast">Breakfast</button>
+      </div>
+
+      <div class="menu-panel is-active" data-panel="coffee">
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-esp/500/380" alt="Espresso">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.coffee.1.name">Signature Espresso</h4><span class="menu-price">$3.50</span></div><p data-i18n="menu.coffee.1.desc">Double shot, notes of dark chocolate and orange peel.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-latte/500/380" alt="Latte">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.coffee.2.name">Copper Latte</h4><span class="menu-price">$4.20</span></div><p data-i18n="menu.coffee.2.desc">House espresso, steamed milk, hint of cinnamon.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-pour/500/380" alt="Pour over coffee">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.coffee.3.name">Pour Over</h4><span class="menu-price">$4.80</span></div><p data-i18n="menu.coffee.3.desc">Single-origin, brewed fresh to order.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-cold/500/380" alt="Cold brew">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.coffee.4.name">Cold Brew</h4><span class="menu-price">$4.50</span></div><p data-i18n="menu.coffee.4.desc">Steeped 18 hours, smooth and low-acid.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-flat/500/380" alt="Flat white">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.coffee.5.name">Flat White</h4><span class="menu-price">$4.30</span></div><p data-i18n="menu.coffee.5.desc">Velvety micro-foam over a double ristretto.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-mocha/500/380" alt="Mocha">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.coffee.6.name">Mocha</h4><span class="menu-price">$4.90</span></div><p data-i18n="menu.coffee.6.desc">Espresso, steamed milk, house-made chocolate.</p></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="menu-panel" data-panel="pastries">
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-croissant/500/380" alt="Croissant">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.pastries.1.name">Butter Croissant</h4><span class="menu-price">$3.20</span></div><p data-i18n="menu.pastries.1.desc">Laminated dough, baked fresh every morning.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-danish/500/380" alt="Almond danish">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.pastries.2.name">Almond Danish</h4><span class="menu-price">$3.90</span></div><p data-i18n="menu.pastries.2.desc">Flaky pastry, almond cream, toasted flakes.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-cinnamon/500/380" alt="Cinnamon roll">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.pastries.3.name">Cinnamon Roll</h4><span class="menu-price">$4.10</span></div><p data-i18n="menu.pastries.3.desc">Soft brioche swirl with cream-cheese glaze.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-banana/500/380" alt="Banana bread">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.pastries.4.name">Banana Bread</h4><span class="menu-price">$3.60</span></div><p data-i18n="menu.pastries.4.desc">Moist loaf slice with walnuts and honey.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-cookie/500/380" alt="Chocolate cookie">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.pastries.5.name">Dark Choc Cookie</h4><span class="menu-price">$2.90</span></div><p data-i18n="menu.pastries.5.desc">Crisp edge, gooey center, sea salt flakes.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-scone/500/380" alt="Scone">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.pastries.6.name">Scone</h4><span class="menu-price">$3.40</span></div><p data-i18n="menu.pastries.6.desc">Berry-studded, served with clotted cream.</p></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="menu-panel" data-panel="breakfast">
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-avocado/500/380" alt="Avocado toast">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.breakfast.1.name">Avocado Toast</h4><span class="menu-price">$8.50</span></div><p data-i18n="menu.breakfast.1.desc">Sourdough, smashed avocado, chili flakes, lime.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-shakshuka/500/380" alt="Shakshuka">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.breakfast.2.name">Shakshuka</h4><span class="menu-price">$9.80</span></div><p data-i18n="menu.breakfast.2.desc">Baked eggs in spiced tomato sauce, warm bread.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-granola/500/380" alt="Granola bowl">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.breakfast.3.name">Granola Bowl</h4><span class="menu-price">$7.20</span></div><p data-i18n="menu.breakfast.3.desc">House granola, yogurt, seasonal fruit, honey.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-sandwich/500/380" alt="Breakfast sandwich">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.breakfast.4.name">Breakfast Sandwich</h4><span class="menu-price">$8.90</span></div><p data-i18n="menu.breakfast.4.desc">Egg, cheddar, arugula on a toasted brioche bun.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-oats/500/380" alt="Overnight oats">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.breakfast.5.name">Overnight Oats</h4><span class="menu-price">$6.50</span></div><p data-i18n="menu.breakfast.5.desc">Oats soaked in oat milk, chia, berries.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coppercup-omelette/500/380" alt="Omelette">
+            <div class="menu-card-body"><div class="menu-card-top"><h4 data-i18n="menu.breakfast.6.name">Omelette</h4><span class="menu-price">$8.20</span></div><p data-i18n="menu.breakfast.6.desc">Three eggs, herbs, choice of cheese or veg.</p></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="gallery.eyebrow">Inside Copper Cup</span>
+        <h2 data-i18n="gallery.title">Gallery</h2>
+      </div>
+      <div class="gallery-grid reveal">
+        <a href="https://picsum.photos/seed/coppercup-g1/1200/1200" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/coppercup-g1/700/700" alt="Café interior" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/coppercup-g2/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/coppercup-g2/500/400" alt="Latte art" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/coppercup-g3/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/coppercup-g3/500/400" alt="Roasting beans" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/coppercup-g4/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/coppercup-g4/500/400" alt="Bar counter" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/coppercup-g5/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/coppercup-g5/500/400" alt="Guests enjoying coffee" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/coppercup-g6/1200/700" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/coppercup-g6/700/400" alt="Pastry display" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="testimonials.eyebrow">Kind Words</span>
+        <h2 data-i18n="testimonials.title">What our guests say</h2>
+      </div>
+      <div class="testimonial-row">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t1.text">“The best flat white I've had in the city, and the croissants sell out for a reason.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/coppercup-p1/100/100" alt=""><div><strong data-i18n="t1.name">Emily Carter</strong><span data-i18n="t1.role">Regular guest</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t2.text">“Cozy spot, fast wifi, and the staff remembers my order. What more could I want.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/coppercup-p2/100/100" alt=""><div><strong data-i18n="t2.name">James Whitfield</strong><span data-i18n="t2.role">Remote worker</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t3.text">“Their single-origin pour over completely changed how I think about coffee.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/coppercup-p3/100/100" alt=""><div><strong data-i18n="t3.name">Sofia Martinez</strong><span data-i18n="t3.role">Coffee enthusiast</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t4.text">“Ordered online for pickup — ready in 5 minutes, exactly as described. Perfect.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/coppercup-p4/100/100" alt=""><div><strong data-i18n="t4.name">Daniel Osei</strong><span data-i18n="t4.role">First-time visitor</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="section">
+    <div class="container">
+      <div class="promo reveal">
+        <div>
+          <h3 data-i18n="promo.title">Join the Copper Club</h3>
+          <p data-i18n="promo.text">Collect stamps with every purchase and get a free drink after your 9th cup. Sign up takes 30 seconds.</p>
+        </div>
+        <a href="#contact" class="btn btn-light" data-i18n="promo.cta">Join Free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="faq.eyebrow">Good To Know</span>
+        <h2 data-i18n="faq.title">Frequently asked questions</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q1">What are your opening hours?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a1">We're open Monday–Friday 7:00–19:00, and Saturday–Sunday 8:00–18:00.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q2">Do you have wifi?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a2">Yes, free high-speed wifi is available throughout the café — ask any barista for the password.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q3">Can I book a table for a group?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a3">For groups of 6 or more, please call us or use the contact form below and we'll confirm your reservation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q4">Do you offer delivery?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a4">Yes, we deliver within 3 km through our online ordering system, usually within 25–35 minutes.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q5">Do you have oat / almond milk?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a5">Absolutely — oat, almond, soy and coconut milk are all available at no extra charge.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Visit Us</span>
+        <h2 data-i18n="contact.title">Find your way to us</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong data-i18n="contact.address.label">Address</strong><span data-i18n="contact.address.value">24 Maple Street, Downtown</span></div>
+          </div>
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><strong data-i18n="contact.hours.label">Hours</strong><span data-i18n="contact.hours.value">Mon–Fri 7:00–19:00 · Sat–Sun 8:00–18:00</span></div>
+          </div>
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><strong data-i18n="contact.phone.label">Phone</strong><span data-i18n="contact.phone.value">+1 (555) 214-7788</span></div>
+          </div>
+          <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=coffee+shop+downtown&output=embed"></iframe>
+        </div>
+
+        <form class="contact-form reveal" data-form novalidate>
+          <h3 data-i18n="contact.form.title">Send us a message</h3>
+          <div class="form-row">
+            <label for="name" data-i18n="contact.form.name">Your name</label>
+            <input id="name" name="name" type="text" required data-i18n-placeholder="contact.form.namePh" placeholder="Jane Doe">
+          </div>
+          <div class="form-row">
+            <label for="reach" data-i18n="contact.form.email">Email or phone</label>
+            <input id="reach" name="reach" type="text" required data-i18n-placeholder="contact.form.emailPh" placeholder="jane@email.com">
+          </div>
+          <div class="form-row">
+            <label for="message" data-i18n="contact.form.message">Message</label>
+            <textarea id="message" name="message" rows="3" data-i18n-placeholder="contact.form.messagePh" placeholder="Table for two this Saturday evening…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Send Message</button>
+          <p class="form-note" data-i18n="contact.form.note">We usually reply within a few hours during opening hours.</p>
+          <div class="form-success"><span>✓</span><span data-i18n="contact.form.success">Thanks! Your message has been sent — we'll get back to you shortly.</span></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="15" fill="#C97C3D"/><path d="M9 12h11v6a5.5 5.5 0 0 1-5.5 5.5h-1A5.5 5.5 0 0 1 9 18v-6z" fill="#2B1A10"/></svg>
+          Copper Cup
+        </a>
+        <p data-i18n="footer.tagline">Small-batch coffee, roasted with care, served with a smile.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5 data-i18n="footer.explore">Explore</h5>
+          <a href="#menu" data-i18n="nav.menu">Menu</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <span data-i18n="contact.address.value">24 Maple Street, Downtown</span>
+          <span data-i18n="contact.phone.value">+1 (555) 214-7788</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Copper Cup Coffee. All rights reserved.</span>
+      <span data-i18n="footer.credit">Portfolio project — design &amp; build by Nikita.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
