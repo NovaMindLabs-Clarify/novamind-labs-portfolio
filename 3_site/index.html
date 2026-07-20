@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js-reveal');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurora Beauty Studio — Hair, Nails &amp; Skin Care</title>
+<meta name="description" content="Aurora Beauty Studio offers hair styling, nail care, skincare and spa treatments in a calm, elegant space. Book your appointment online.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%236B3A3A'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='%23C9A15A' font-family='Georgia'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#top" class="logo">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="13" fill="#C9A15A"/><path d="M13 6c1.5 3 4 4.5 7 5-3 .5-5.5 2-7 5-1.5-3-4-4.5-7-5 3-.5 5.5-2 7-5z" fill="#FDF7F5"/></svg>
+      Aurora
+    </a>
+
+    <nav class="nav-links">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#team" data-i18n="nav.team">Team</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Book Now</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#team" data-i18n="nav.team">Team</a>
+  <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+  <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch lang-switch-mobile">
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="ru">RU</button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="https://picsum.photos/seed/aurora-hero/1800/1200" alt="Beauty studio treatment">
+    <div class="container">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Beauty, Redefined Since 2016</span>
+      <h1 data-i18n="hero.title">Feel Beautiful, Inside and Out</h1>
+      <p class="lead" data-i18n="hero.lead">Hair, nails, skincare and spa rituals in a calm space designed around you — because confidence starts with feeling cared for.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Book Online</a>
+        <a href="#services" class="btn btn-light" data-i18n="hero.cta2">View Services</a>
+      </div>
+    </div>
+    <div class="scroll-cue"><span data-i18n="hero.scroll">Scroll</span><span class="dot"></span></div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-item"><div class="num" data-i18n="trust.1num">9+</div><div class="label" data-i18n="trust.1label">Years of Craft</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.2num">6,500+</div><div class="label" data-i18n="trust.2label">Happy Clients</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.3num">4.9★</div><div class="label" data-i18n="trust.3label">Average Rating</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.4num">5</div><div class="label" data-i18n="trust.4label">Beauty Specialists</div></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">Our Philosophy</span>
+        <h2 data-i18n="about.title">Where every visit feels like a reset</h2>
+        <p data-i18n="about.p1">Aurora opened in 2016 with a simple belief: beauty care should feel restorative, not rushed. We partner with premium, cruelty-free brands and continuously train our team in the latest techniques.</p>
+        <p data-i18n="about.p2">From a quick blow-dry to a full spa afternoon, every treatment is tailored to you — never a one-size-fits-all routine.</p>
+        <a href="#team" class="btn btn-secondary" data-i18n="about.cta">Meet the Team</a>
+      </div>
+      <img class="reveal" src="https://picsum.photos/seed/aurora-about/900/1000" alt="Beauty studio interior">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="services.eyebrow">What We Offer</span>
+        <h2 data-i18n="services.title">Services &amp; Pricing</h2>
+        <p data-i18n="services.subtitle">Explore our menu by category — transparent pricing, no surprises.</p>
+      </div>
+
+      <div class="services-tabs reveal">
+        <button class="menu-tab is-active" data-tab="hair" data-i18n="services.tab.hair">Hair</button>
+        <button class="menu-tab" data-tab="nails" data-i18n="services.tab.nails">Nails</button>
+        <button class="menu-tab" data-tab="skin" data-i18n="services.tab.skin">Skin &amp; Spa</button>
+      </div>
+
+      <div class="menu-panel is-active" data-panel="hair">
+        <div class="services-grid">
+          <div class="service-card"><div><h4 data-i18n="hair.1.name">Signature Haircut</h4><p data-i18n="hair.1.desc">Consultation, cut and blow-dry finish.</p></div><span class="service-price" data-i18n="hair.1.price">$65</span></div>
+          <div class="service-card"><div><h4 data-i18n="hair.2.name">Full Color</h4><p data-i18n="hair.2.desc">Root-to-tip color with gloss treatment.</p></div><span class="service-price" data-i18n="hair.2.price">$120</span></div>
+          <div class="service-card"><div><h4 data-i18n="hair.3.name">Balayage</h4><p data-i18n="hair.3.desc">Hand-painted highlights, toner included.</p></div><span class="service-price" data-i18n="hair.3.price">$165</span></div>
+          <div class="service-card"><div><h4 data-i18n="hair.4.name">Blowout &amp; Style</h4><p data-i18n="hair.4.desc">Wash, blow-dry and finishing style.</p></div><span class="service-price" data-i18n="hair.4.price">$45</span></div>
+        </div>
+      </div>
+      <div class="menu-panel" data-panel="nails">
+        <div class="services-grid">
+          <div class="service-card"><div><h4 data-i18n="nails.1.name">Classic Manicure</h4><p data-i18n="nails.1.desc">Shape, cuticle care, polish of choice.</p></div><span class="service-price" data-i18n="nails.1.price">$35</span></div>
+          <div class="service-card"><div><h4 data-i18n="nails.2.name">Gel Manicure</h4><p data-i18n="nails.2.desc">Long-lasting gel polish, chip-resistant.</p></div><span class="service-price" data-i18n="nails.2.price">$48</span></div>
+          <div class="service-card"><div><h4 data-i18n="nails.3.name">Spa Pedicure</h4><p data-i18n="nails.3.desc">Soak, scrub, massage and polish.</p></div><span class="service-price" data-i18n="nails.3.price">$55</span></div>
+          <div class="service-card"><div><h4 data-i18n="nails.4.name">Nail Art Add-on</h4><p data-i18n="nails.4.desc">Custom design per nail, any complexity.</p></div><span class="service-price" data-i18n="nails.4.price">+$15</span></div>
+        </div>
+      </div>
+      <div class="menu-panel" data-panel="skin">
+        <div class="services-grid">
+          <div class="service-card"><div><h4 data-i18n="skin.1.name">Signature Facial</h4><p data-i18n="skin.1.desc">Deep cleanse, exfoliation and hydration mask.</p></div><span class="service-price" data-i18n="skin.1.price">$85</span></div>
+          <div class="service-card"><div><h4 data-i18n="skin.2.name">Anti-Aging Facial</h4><p data-i18n="skin.2.desc">Collagen-boosting treatment with LED therapy.</p></div><span class="service-price" data-i18n="skin.2.price">$110</span></div>
+          <div class="service-card"><div><h4 data-i18n="skin.3.name">Relaxation Massage</h4><p data-i18n="skin.3.desc">60-minute full body massage.</p></div><span class="service-price" data-i18n="skin.3.price">$95</span></div>
+          <div class="service-card"><div><h4 data-i18n="skin.4.name">Brow &amp; Lash Tint</h4><p data-i18n="skin.4.desc">Shape, tint and finishing brow gel.</p></div><span class="service-price" data-i18n="skin.4.price">$30</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="team.eyebrow">Meet The Team</span>
+        <h2 data-i18n="team.title">Our Specialists</h2>
+      </div>
+      <div class="team-row reveal">
+        <div class="team-card">
+          <img src="https://picsum.photos/seed/aurora-team1/500/600" alt="Isabella Grant">
+          <div class="team-card-body"><h4 data-i18n="member1.name">Isabella Grant</h4><span data-i18n="member1.role">Founder &amp; Colorist</span><br><a href="#contact" data-i18n="member1.cta">Book with Isabella</a></div>
+        </div>
+        <div class="team-card">
+          <img src="https://picsum.photos/seed/aurora-team2/500/600" alt="Chloe Bennett">
+          <div class="team-card-body"><h4 data-i18n="member2.name">Chloe Bennett</h4><span data-i18n="member2.role">Senior Stylist</span><br><a href="#contact" data-i18n="member2.cta">Book with Chloe</a></div>
+        </div>
+        <div class="team-card">
+          <img src="https://picsum.photos/seed/aurora-team3/500/600" alt="Maya Reyes">
+          <div class="team-card-body"><h4 data-i18n="member3.name">Maya Reyes</h4><span data-i18n="member3.role">Nail Artist</span><br><a href="#contact" data-i18n="member3.cta">Book with Maya</a></div>
+        </div>
+        <div class="team-card">
+          <img src="https://picsum.photos/seed/aurora-team4/500/600" alt="Grace Kim">
+          <div class="team-card-body"><h4 data-i18n="member4.name">Grace Kim</h4><span data-i18n="member4.role">Esthetician</span><br><a href="#contact" data-i18n="member4.cta">Book with Grace</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="gallery.eyebrow">Our Work</span>
+        <h2 data-i18n="gallery.title">Gallery</h2>
+      </div>
+      <div class="gallery-grid reveal">
+        <a href="https://picsum.photos/seed/aurora-g1/1200/1200" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/aurora-g1/700/700" alt="Studio interior" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/aurora-g2/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/aurora-g2/500/400" alt="Hair styling" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/aurora-g3/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/aurora-g3/500/400" alt="Manicure detail" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/aurora-g4/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/aurora-g4/500/400" alt="Facial treatment" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/aurora-g5/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/aurora-g5/500/400" alt="Styling tools" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/aurora-g6/1200/700" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/aurora-g6/700/400" alt="Reception area" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="testimonials.eyebrow">Client Love</span>
+        <h2 data-i18n="testimonials.title">What our clients say</h2>
+      </div>
+      <div class="testimonial-row">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t1.text">“Isabella transformed my hair completely — the balayage is exactly what I dreamed of.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/aurora-p1/100/100" alt=""><div><strong data-i18n="t1.name">Hannah Price</strong><span data-i18n="t1.role">Regular client</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t2.text">“The most relaxing facial I've ever had. The whole studio smells and feels like a retreat.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/aurora-p2/100/100" alt=""><div><strong data-i18n="t2.name">Olivia Brooks</strong><span data-i18n="t2.role">Spa client</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t3.text">“Booking online was effortless and Maya's nail art is always Instagram-worthy.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/aurora-p3/100/100" alt=""><div><strong data-i18n="t3.name">Ava Thompson</strong><span data-i18n="t3.role">Nail client</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t4.text">“Consistent, professional, and genuinely kind staff. My go-to salon for three years now.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/aurora-p4/100/100" alt=""><div><strong data-i18n="t4.name">Grace Miller</strong><span data-i18n="t4.role">Loyal client</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="promo reveal">
+        <div>
+          <h3 data-i18n="promo.title">Try Our Signature Package</h3>
+          <p data-i18n="promo.text">Haircut, gel manicure and a signature facial bundled together — save 20% when booked as a set.</p>
+        </div>
+        <a href="#contact" class="btn btn-light" data-i18n="promo.cta">Book The Package</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="faq.eyebrow">Good To Know</span>
+        <h2 data-i18n="faq.title">Frequently asked questions</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q1">What are your opening hours?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a1">We're open Tuesday–Sunday 9:00–19:00. Closed on Mondays.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q2">Can I cancel or reschedule?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a2">Yes, free of charge up to 24 hours before your appointment.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q3">Do you offer packages or memberships?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a3">Yes — ask about our monthly membership and seasonal packages when you book.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q4">Which brands do you use?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a4">We work exclusively with premium, cruelty-free professional brands across hair, skin and nail care.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q5">Is parking available?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a5">Yes, free parking is available in the lot directly behind the studio.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOKING -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Visit The Studio</span>
+        <h2 data-i18n="contact.title">Find your way to us</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong data-i18n="contact.address.label">Address</strong><span data-i18n="contact.address.value">42 Rosewood Avenue, Uptown</span></div>
+          </div>
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><strong data-i18n="contact.hours.label">Hours</strong><span data-i18n="contact.hours.value">Tue–Sun 9:00–19:00 · Mon Closed</span></div>
+          </div>
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><strong data-i18n="contact.phone.label">Phone</strong><span data-i18n="contact.phone.value">+1 (555) 462-1190</span></div>
+          </div>
+          <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=beauty+salon+uptown&output=embed"></iframe>
+        </div>
+
+        <form class="contact-form reveal" data-form novalidate>
+          <h3 data-i18n="contact.form.title">Book Your Visit</h3>
+          <div class="form-row">
+            <label for="name" data-i18n="contact.form.name">Your name</label>
+            <input id="name" name="name" type="text" required data-i18n-placeholder="contact.form.namePh" placeholder="Sophie Adams">
+          </div>
+          <div class="form-row">
+            <label for="phone" data-i18n="contact.form.phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" required data-i18n-placeholder="contact.form.phonePh" placeholder="+1 (555) 000-0000">
+          </div>
+          <div class="form-row">
+            <label for="service" data-i18n="contact.form.service">Service</label>
+            <select id="service" name="service">
+              <option data-i18n="hair.1.name">Signature Haircut</option>
+              <option data-i18n="hair.3.name">Balayage</option>
+              <option data-i18n="nails.2.name">Gel Manicure</option>
+              <option data-i18n="skin.1.name">Signature Facial</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Request Appointment</button>
+          <p class="form-note" data-i18n="contact.form.note">We'll confirm your appointment by phone or text within the hour.</p>
+          <div class="form-success"><span>✓</span><span data-i18n="contact.form.success">Request received! We'll confirm your appointment shortly.</span></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <svg width="24" height="24" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="13" fill="#C9A15A"/><path d="M13 6c1.5 3 4 4.5 7 5-3 .5-5.5 2-7 5-1.5-3-4-4.5-7-5 3-.5 5.5-2 7-5z" fill="#4A2323"/></svg>
+          Aurora
+        </a>
+        <p data-i18n="footer.tagline">Beauty care that feels like a moment for yourself.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 17c1-3 2-6 2-8a2 2 0 0 1 4 0c0 1.5-1 3-1 4.5a1.5 1.5 0 0 0 3 .5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5 data-i18n="footer.explore">Explore</h5>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#team" data-i18n="nav.team">Team</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <span data-i18n="contact.address.value">42 Rosewood Avenue, Uptown</span>
+          <span data-i18n="contact.phone.value">+1 (555) 462-1190</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Aurora Beauty Studio. All rights reserved.</span>
+      <span data-i18n="footer.credit">Portfolio project — design &amp; build by Nikita.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
