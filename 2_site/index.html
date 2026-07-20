@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js-reveal');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blackwood Barbershop — Classic Cuts, Modern Style</title>
+<meta name="description" content="Blackwood Barbershop offers precision haircuts, beard grooming and hot towel shaves. Book your chair online in under a minute.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23141414'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='%23C9A24B' font-family='Arial'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#top" class="logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#C9A24B"/><path d="M8 8l12 12M20 8L8 20" stroke="#141414" stroke-width="2"/></svg>
+      Blackwood
+    </a>
+
+    <nav class="nav-links">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#barbers" data-i18n="nav.barbers">Barbers</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Book Now</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#barbers" data-i18n="nav.barbers">Barbers</a>
+  <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+  <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch lang-switch-mobile">
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="ru">RU</button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="https://picsum.photos/seed/blackwood-hero/1800/1200" alt="Barber cutting hair">
+    <div class="container">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Downtown's Chair Since 2015</span>
+      <h1 data-i18n="hero.title">Sharp Cuts. Real Craft.</h1>
+      <p class="lead" data-i18n="hero.lead">Precision haircuts, straight-razor shaves and beard sculpting from barbers who take their trade seriously.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Book Online</a>
+        <a href="tel:+15553309021" class="btn btn-secondary" data-i18n="hero.cta2">Call Us</a>
+      </div>
+    </div>
+    <div class="scroll-cue"><span data-i18n="hero.scroll">Scroll</span><span class="dot"></span></div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-item"><div class="num" data-i18n="trust.1num">10+</div><div class="label" data-i18n="trust.1label">Years in Business</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.2num">14,000+</div><div class="label" data-i18n="trust.2label">Cuts Delivered</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.3num">4.9★</div><div class="label" data-i18n="trust.3label">Client Rating</div></div>
+      <div class="trust-item"><div class="num" data-i18n="trust.4num">6</div><div class="label" data-i18n="trust.4label">Master Barbers</div></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">Our Story</span>
+        <h2 data-i18n="about.title">A shop built on old-school standards</h2>
+        <p data-i18n="about.p1">Blackwood opened in 2015 with one chair and a simple idea: treat every cut like it matters. A decade later, we're still sharpening our own razors and training every barber on the floor.</p>
+        <p data-i18n="about.p2">No rush jobs, no shortcuts — just clean lines, honest conversation, and a shop that feels like it's yours.</p>
+        <a href="#gallery" class="btn btn-secondary" data-i18n="about.cta">See Our Work</a>
+      </div>
+      <img class="reveal" src="https://picsum.photos/seed/blackwood-about/900/1000" alt="Barbershop interior">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="services.eyebrow">What We Offer</span>
+        <h2 data-i18n="services.title">Services &amp; Pricing</h2>
+        <p data-i18n="services.subtitle">Simple, transparent pricing — no surprises at the chair.</p>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-card"><div><h4 data-i18n="services.1.name">Classic Haircut</h4><p data-i18n="services.1.desc">Precision cut, styled finish, hot towel included.</p></div><span class="service-price" data-i18n="services.1.price">$32</span></div>
+        <div class="service-card"><div><h4 data-i18n="services.2.name">Beard Trim &amp; Shape</h4><p data-i18n="services.2.desc">Line-up, shape and conditioning oil.</p></div><span class="service-price" data-i18n="services.2.price">$20</span></div>
+        <div class="service-card"><div><h4 data-i18n="services.3.name">Cut + Beard Combo</h4><p data-i18n="services.3.desc">Full haircut with beard trim and hot towel.</p></div><span class="service-price" data-i18n="services.3.price">$45</span></div>
+        <div class="service-card"><div><h4 data-i18n="services.4.name">Hot Towel Shave</h4><p data-i18n="services.4.desc">Traditional straight-razor shave, hot towel prep.</p></div><span class="service-price" data-i18n="services.4.price">$35</span></div>
+        <div class="service-card"><div><h4 data-i18n="services.5.name">Kids Cut (Under 12)</h4><p data-i18n="services.5.desc">Quick, patient cuts for younger clients.</p></div><span class="service-price" data-i18n="services.5.price">$22</span></div>
+        <div class="service-card"><div><h4 data-i18n="services.6.name">Buzz Cut</h4><p data-i18n="services.6.desc">Clean, uniform clipper cut, any guard length.</p></div><span class="service-price" data-i18n="services.6.price">$25</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARBERS -->
+  <section class="section" id="barbers">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="barbers.eyebrow">Meet The Team</span>
+        <h2 data-i18n="barbers.title">Our Barbers</h2>
+      </div>
+      <div class="team-row reveal">
+        <div class="team-card">
+          <img src="https://picsum.photos/seed/blackwood-barber1/500/600" alt="Marcus Reid">
+          <div class="team-card-body"><h4 data-i18n="barber1.name">Marcus Reid</h4><span data-i18n="barber1.role">Owner &amp; Master Barber</span><br><a href="#contact" data-i18n="barber1.cta">Book with Marcus</a></div>
+        </div>
+        <div class="team-card">
+          <img src="https://picsum.photos/seed/blackwood-barber2/500/600" alt="Diego Alvarez">
+          <div class="team-card-body"><h4 data-i18n="barber2.name">Diego Alvarez</h4><span data-i18n="barber2.role">Senior Barber</span><br><a href="#contact" data-i18n="barber2.cta">Book with Diego</a></div>
+        </div>
+        <div class="team-card">
+          <img src="https://picsum.photos/seed/blackwood-barber3/500/600" alt="Theo Brooks">
+          <div class="team-card-body"><h4 data-i18n="barber3.name">Theo Brooks</h4><span data-i18n="barber3.role">Fades &amp; Beard Specialist</span><br><a href="#contact" data-i18n="barber3.cta">Book with Theo</a></div>
+        </div>
+        <div class="team-card">
+          <img src="https://picsum.photos/seed/blackwood-barber4/500/600" alt="Sam Whitaker">
+          <div class="team-card-body"><h4 data-i18n="barber4.name">Sam Whitaker</h4><span data-i18n="barber4.role">Barber</span><br><a href="#contact" data-i18n="barber4.cta">Book with Sam</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="gallery.eyebrow">Fresh Cuts</span>
+        <h2 data-i18n="gallery.title">Gallery</h2>
+      </div>
+      <div class="gallery-grid reveal">
+        <a href="https://picsum.photos/seed/blackwood-g1/1200/1200" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/blackwood-g1/700/700" alt="Fresh fade" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/blackwood-g2/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/blackwood-g2/500/400" alt="Beard trim" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/blackwood-g3/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/blackwood-g3/500/400" alt="Barbershop chair" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/blackwood-g4/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/blackwood-g4/500/400" alt="Straight razor shave" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/blackwood-g5/700/500" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/blackwood-g5/500/400" alt="Barber tools" loading="lazy"></a>
+        <a href="https://picsum.photos/seed/blackwood-g6/1200/700" target="_blank" rel="noopener"><img src="https://picsum.photos/seed/blackwood-g6/700/400" alt="Shop interior" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="testimonials.eyebrow">Client Reviews</span>
+        <h2 data-i18n="testimonials.title">What our clients say</h2>
+      </div>
+      <div class="testimonial-row">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t1.text">“Best fade I've had in years. Marcus actually listens before he picks up the clippers.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/blackwood-p1/100/100" alt=""><div><strong data-i18n="t1.name">Ryan Coleman</strong><span data-i18n="t1.role">Regular client</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t2.text">“Booked online, was in the chair within five minutes of walking in. Efficient and sharp.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/blackwood-p2/100/100" alt=""><div><strong data-i18n="t2.name">Adam Foster</strong><span data-i18n="t2.role">New client</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t3.text">“The hot towel shave is worth it alone. Feels like a proper barbershop, not a chain.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/blackwood-p3/100/100" alt=""><div><strong data-i18n="t3.name">Chris Nolan</strong><span data-i18n="t3.role">Regular client</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t4.text">“My son's first haircut and they were incredibly patient with him. Highly recommend.”</p>
+          <div class="testimonial-person"><img src="https://picsum.photos/seed/blackwood-p4/100/100" alt=""><div><strong data-i18n="t4.name">Mike Sanders</strong><span data-i18n="t4.role">Parent</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="faq.eyebrow">Good To Know</span>
+        <h2 data-i18n="faq.title">Frequently asked questions</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q1">Do I need to book in advance?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a1">Walk-ins are welcome, but booking online guarantees your preferred time and barber.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q2">Is a deposit required?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a2">No deposit needed for standard bookings — just show up on time.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q3">Do you offer parking?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a3">Yes, free street parking is available directly outside the shop after 6pm, and a public lot two minutes away.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q4">Can I request a specific barber?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a4">Absolutely — select your preferred barber when booking online or mention it when you call.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q5">What if I need to cancel?</span><span class="icon"></span></button>
+          <div class="faq-answer"><p data-i18n="faq.a5">Just call or message us at least 2 hours ahead and we'll happily reschedule.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOKING -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Visit The Shop</span>
+        <h2 data-i18n="contact.title">Find your way to us</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong data-i18n="contact.address.label">Address</strong><span data-i18n="contact.address.value">118 Iron Row, Downtown</span></div>
+          </div>
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><strong data-i18n="contact.hours.label">Hours</strong><span data-i18n="contact.hours.value">Mon–Sat 9:00–20:00 · Sun Closed</span></div>
+          </div>
+          <div class="contact-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><strong data-i18n="contact.phone.label">Phone</strong><span data-i18n="contact.phone.value">+1 (555) 330-9021</span></div>
+          </div>
+          <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=barbershop+downtown&output=embed"></iframe>
+        </div>
+
+        <form class="contact-form reveal" data-form novalidate>
+          <h3 data-i18n="contact.form.title">Book Your Chair</h3>
+          <div class="form-row">
+            <label for="name" data-i18n="contact.form.name">Your name</label>
+            <input id="name" name="name" type="text" required data-i18n-placeholder="contact.form.namePh" placeholder="John Miller">
+          </div>
+          <div class="form-row">
+            <label for="phone" data-i18n="contact.form.phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" required data-i18n-placeholder="contact.form.phonePh" placeholder="+1 (555) 000-0000">
+          </div>
+          <div class="form-row">
+            <label for="service" data-i18n="contact.form.service">Service</label>
+            <select id="service" name="service">
+              <option data-i18n="services.1.name">Classic Haircut</option>
+              <option data-i18n="services.2.name">Beard Trim &amp; Shape</option>
+              <option data-i18n="services.3.name">Cut + Beard Combo</option>
+              <option data-i18n="services.4.name">Hot Towel Shave</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Request Booking</button>
+          <p class="form-note" data-i18n="contact.form.note">We'll confirm your slot by phone or text within the hour.</p>
+          <div class="form-success"><span>✓</span><span data-i18n="contact.form.success">Request received! We'll confirm your appointment shortly.</span></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <svg width="26" height="26" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#C9A24B"/><path d="M8 8l12 12M20 8L8 20" stroke="#141414" stroke-width="2"/></svg>
+          Blackwood
+        </a>
+        <p data-i18n="footer.tagline">Classic cuts, modern standards — one chair at a time.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5 data-i18n="footer.explore">Explore</h5>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#barbers" data-i18n="nav.barbers">Barbers</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <span data-i18n="contact.address.value">118 Iron Row, Downtown</span>
+          <span data-i18n="contact.phone.value">+1 (555) 330-9021</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Blackwood Barbershop. All rights reserved.</span>
+      <span data-i18n="footer.credit">Portfolio project — design &amp; build by Nikita.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
