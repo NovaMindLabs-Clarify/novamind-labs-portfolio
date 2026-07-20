@@ -31,20 +31,20 @@ export function Footer() {
 
           <div className={styles.columns}>
             <div className={styles.col}>
-              <h5>{t('footer.colProduct')}</h5>
+              <h2>{t('footer.colProduct')}</h2>
               <Link to="/book">{t('shell.cta.book')}</Link>
               <Link to="/staff">{t('shell.cta.staff')}</Link>
               <Link to="/admin">{t('shell.cta.admin')}</Link>
             </div>
             <div className={styles.col}>
-              <h5>{t('footer.colCompany')}</h5>
+              <h2>{t('footer.colCompany')}</h2>
               <a href="#">{t('footer.about')}</a>
               <a href="#">{t('footer.caseStudy')}</a>
               <a href="#">{t('footer.contactUs')}</a>
               <a href="#">{t('footer.careers')}</a>
             </div>
             <div className={styles.col}>
-              <h5>{t('footer.colLegal')}</h5>
+              <h2>{t('footer.colLegal')}</h2>
               <a href="#">{t('footer.privacy')}</a>
               <a href="#">{t('footer.terms')}</a>
               <a href="#">{t('footer.cookies')}</a>

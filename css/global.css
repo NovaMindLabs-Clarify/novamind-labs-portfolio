@@ -227,6 +227,41 @@ body.nav-open { overflow: hidden; }
 .form-success { display: none; align-items: center; gap: 10px; background: rgba(95, 212, 160, 0.1); border: 1px solid var(--ok); border-radius: var(--radius-sm); padding: 14px 16px; font-size: 0.88rem; margin-top: 8px; color: var(--ok); }
 .form-success.is-visible { display: flex; }
 
+/* ---------- Pricing ---------- */
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+.pricing-card { position: relative; padding: 32px 28px; display: flex; flex-direction: column; }
+.pricing-card.is-featured { border-color: var(--signal); }
+.pricing-badge { position: absolute; top: -12px; left: 28px; background: var(--signal); color: #100905; font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 12px; border-radius: 999px; }
+.pricing-name { font-size: 1.15rem; margin-bottom: 8px; }
+.pricing-desc { font-size: 0.86rem; min-height: 4.2em; }
+.pricing-price { font-family: var(--font-mono); font-size: 1.6rem; color: var(--signal); margin: 12px 0 2px; }
+.pricing-price-rub { font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-dim); margin-bottom: 4px; }
+.pricing-time { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 20px; }
+.pricing-features { flex: 1; margin-bottom: 24px; }
+.pricing-features li { position: relative; padding-left: 20px; margin-bottom: 10px; font-size: 0.88rem; color: var(--text); }
+.pricing-features li::before { content: "✓"; position: absolute; left: 0; color: var(--ok); }
+
+.guarantee-strip { display: flex; align-items: center; gap: 14px; justify-content: center; text-align: center; background: var(--panel); border: 1px solid var(--wire-soft); border-radius: var(--radius-md); padding: 20px 28px; margin: 40px 0 64px; font-size: 0.9rem; color: var(--text); }
+.guarantee-strip svg { flex-shrink: 0; color: var(--ok); }
+
+.addons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.addon-card { padding: 22px; }
+.addon-card h4 { font-size: 0.98rem; margin-bottom: 6px; }
+.addon-card p { font-size: 0.84rem; margin: 0; }
+
+/* ---------- FAQ accordion ---------- */
+.faq-list { max-width: 760px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--wire-soft); }
+.faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 4px; background: none; border: none; text-align: left; font-family: var(--font-display); font-size: 1rem; color: var(--text); }
+.faq-question .icon { flex-shrink: 0; width: 20px; height: 20px; position: relative; }
+.faq-question .icon::before, .faq-question .icon::after { content: ""; position: absolute; background: var(--signal); border-radius: 2px; transition: transform 0.25s ease; }
+.faq-question .icon::before { width: 100%; height: 2px; top: 50%; left: 0; transform: translateY(-50%); }
+.faq-question .icon::after { height: 100%; width: 2px; left: 50%; top: 0; transform: translateX(-50%); }
+.faq-item.is-open .faq-question .icon::after { transform: translateX(-50%) scaleY(0); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.faq-answer p { padding: 0 4px 22px; }
+.faq-item.is-open .faq-answer { max-height: 240px; }
+
 /* ---------- Case study ---------- */
 .case-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 28px 0; border-top: 1px solid var(--wire-soft); border-bottom: 1px solid var(--wire-soft); margin: 32px 0 56px; }
 .case-meta dt { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; color: var(--signal); letter-spacing: 0.06em; }
@@ -248,6 +283,7 @@ body.nav-open { overflow: hidden; }
   .process-steps { grid-template-columns: 1fr; }
   .case-meta { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
+  .pricing-grid, .addons-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
   .nav-links, .header-actions .lang-switch { display: none; }

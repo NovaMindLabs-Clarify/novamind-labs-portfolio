@@ -106,6 +106,25 @@ function initReveal() {
   setTimeout(() => items.forEach((el) => el.classList.add('in-view')), 2500);
 }
 
+/* ---------- FAQ accordion ---------- */
+function initFaq() {
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    const question = item.querySelector('.faq-question');
+    if (!question) return;
+    question.addEventListener('click', () => {
+      const wasOpen = item.classList.contains('is-open');
+      item.closest('.faq-list')?.querySelectorAll('.faq-item').forEach((el) => {
+        el.classList.remove('is-open');
+        el.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
+      });
+      if (!wasOpen) {
+        item.classList.add('is-open');
+        question.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+}
+
 /* ---------- Contact form (client-only, mailto: fallback) ---------- */
 function initForms() {
   document.querySelectorAll('form[data-form]').forEach((form) => {
@@ -229,6 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initMobileNav();
   initReveal();
+  initFaq();
   initForms();
   initMagneticButtons();
   initHeroReveal();

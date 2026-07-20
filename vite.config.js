@@ -10,6 +10,7 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
         work: resolve(__dirname, 'work.html'),
         chairtime: resolve(__dirname, 'work-chairtime.html'),
+        pricing: resolve(__dirname, 'pricing.html'),
         contact: resolve(__dirname, 'contact.html'),
       },
     },

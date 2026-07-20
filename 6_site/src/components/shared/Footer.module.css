@@ -40,7 +40,7 @@
 .social a:hover { background: var(--brass); color: #1a1a1a; }
 
 .columns { display: flex; gap: 56px; flex-wrap: wrap; }
-.col h5 {
+.col h2 {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
