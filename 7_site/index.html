@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js-reveal');</script>
+<title>Ember & Salt — Modern American Restaurant</title>
+<meta name="description" content="Ember & Salt is a modern American restaurant in the Riverside District — seasonal menu, private dining, and a chef's journal. Reserve a table.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231B2420'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='%23C9552C' font-family='Georgia'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Ember & Salt",
+  "servesCuisine": "American",
+  "priceRange": "$$$",
+  "address": { "@type": "PostalAddress", "streetAddress": "214 Foundry Lane", "addressLocality": "Riverside District" },
+  "telephone": "+1-555-812-4470",
+  "openingHours": "Tu-Su 17:00-23:00",
+  "hasMenu": "menu.html"
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Ember &amp; Salt</a>
+    <nav class="nav-links">
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="events.html" data-i18n="nav.events">Events</a>
+      <a href="blog.html" data-i18n="nav.blog">Journal</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Reserve a Table</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="menu.html" data-i18n="nav.menu">Menu</a>
+  <a href="about.html" data-i18n="nav.about">About</a>
+  <a href="events.html" data-i18n="nav.events">Events</a>
+  <a href="blog.html" data-i18n="nav.blog">Journal</a>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button></div>
+</nav>
+
+<main>
+  <section class="hero">
+    <img class="hero-bg" src="https://picsum.photos/seed/embersalt-hero/1800/1200" alt="Wood-fired dining room at Ember & Salt">
+    <div class="container">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Riverside District, Tue–Sun</span>
+      <h1 data-i18n="hero.title">Wood-fired, seasonal, unhurried.</h1>
+      <p class="lead" data-i18n="hero.lead">Ember & Salt is a dining room built around one wood-fired hearth and a menu that changes with the season — plus private dining, a full bar, and a journal from the kitchen.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary" data-i18n="hero.cta1">Reserve a Table</a>
+        <a href="menu.html" class="btn btn-ghost on-dark" data-i18n="hero.cta2">View the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="info-bar">
+    <div class="container">
+      <span><strong data-i18n="info.hours.label">Hours</strong> — <span data-i18n="info.hours.value">Tue–Sun 17:00–23:00 · Closed Mondays</span></span>
+      <span><strong data-i18n="info.address.label">Address</strong> — <span data-i18n="info.address.value">214 Foundry Lane, Riverside District</span></span>
+      <span><strong data-i18n="info.phone.label">Phone</strong> — <span data-i18n="info.phone.value">+1 (555) 812-4470</span></span>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container story-grid">
+      <img class="reveal" src="https://picsum.photos/seed/embersalt-oven/900/700" alt="Wood-fired oven">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="home.about.eyebrow">Our Story</span>
+        <h2 data-i18n="home.about.title">One hearth, one menu, no shortcuts</h2>
+        <p data-i18n="home.about.p1">Ember & Salt started as a six-table room with a single wood-fired oven. Ten years on, the oven is still the center of the kitchen — everything else grew around it.</p>
+        <a href="about.html" class="btn btn-ghost" data-i18n="home.about.cta">Read our full story →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow" data-i18n="home.menu.eyebrow">From the Menu</span>
+        <h2 data-i18n="home.menu.title">A few things we're known for</h2>
+      </div>
+      <div class="card-grid reveal">
+        <div class="info-card">
+          <img src="https://picsum.photos/seed/embersalt-chicken/500/380" alt="Wood-fired half chicken">
+          <div class="info-card-body"><h3 data-i18n="main.1.name">Wood-Fired Half Chicken</h3><p data-i18n="main.1.desc">Charred lemon, herb jus, roasted potatoes</p></div>
+        </div>
+        <div class="info-card">
+          <img src="https://picsum.photos/seed/embersalt-ribeye/500/380" alt="Dry-aged ribeye">
+          <div class="info-card-body"><h3 data-i18n="main.2.name">Dry-Aged Ribeye (14oz)</h3><p data-i18n="main.2.desc">Bone marrow butter, grilled onion</p></div>
+        </div>
+        <div class="info-card">
+          <img src="https://picsum.photos/seed/embersalt-cheesecake/500/380" alt="Burnt basque cheesecake">
+          <div class="info-card-body"><h3 data-i18n="dessert.1.name">Burnt Basque Cheesecake</h3><p data-i18n="dessert.1.desc">Macerated berries</p></div>
+        </div>
+      </div>
+      <div class="reveal" style="text-align:center; margin-top:36px">
+        <a href="menu.html" class="btn btn-ghost on-dark" data-i18n="home.menu.cta">See the full menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow" data-i18n="home.events.eyebrow">Private Dining</span>
+        <h2 data-i18n="home.events.title">Host something here</h2>
+        <p data-i18n="home.events.lead">From an eight-seat chef's table to a full restaurant buyout.</p>
+      </div>
+      <div class="reveal" style="text-align:center">
+        <a href="events.html" class="btn btn-primary" data-i18n="home.events.cta">Explore private dining →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow" data-i18n="home.blog.eyebrow">From the Journal</span>
+        <h2 data-i18n="home.blog.title">Notes from the kitchen</h2>
+      </div>
+      <div class="card-grid cols-2 reveal">
+        <a class="info-card" href="blog/chefs-notes-seasonal-menu.html">
+          <img src="https://picsum.photos/seed/embersalt-post1/600/380" alt="">
+          <div class="info-card-body"><span class="blog-date" data-i18n="post1.date">October 2, 2026</span><h3 data-i18n="blog.post1.title">Chef's Notes: The Autumn Menu</h3><p data-i18n="blog.post1.desc">Why the menu changed this week, and what's worth ordering right now.</p></div>
+        </a>
+        <a class="info-card" href="blog/pairing-guide-autumn-menu.html">
+          <img src="https://picsum.photos/seed/embersalt-post2/600/380" alt="">
+          <div class="info-card-body"><span class="blog-date" data-i18n="post2.date">October 9, 2026</span><h3 data-i18n="blog.post2.title">A Pairing Guide to Our Autumn Menu</h3><p data-i18n="blog.post2.desc">What to drink with the new menu, from the Old Fashioned to the house red.</p></div>
+        </a>
+      </div>
+      <div class="reveal" style="text-align:center; margin-top:36px">
+        <a href="blog.html" class="btn btn-ghost on-dark" data-i18n="home.blog.cta">Read the journal →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Ember &amp; Salt</a>
+        <p data-i18n="footer.tagline">Wood-fired, seasonal, unhurried.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5 data-i18n="footer.explore">Explore</h5>
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="blog.html" data-i18n="nav.blog">Journal</a>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.visit">Visit</h5>
+          <span data-i18n="info.address.value">214 Foundry Lane, Riverside District</span>
+          <span data-i18n="info.phone.value">+1 (555) 812-4470</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Ember & Salt. All rights reserved.</span>
+      <span data-i18n="footer.credit">Business-tier example — part of the NovaMind Labs portfolio.</span>
+      <a href="../work.html" data-i18n="footer.backToPortfolio">← Back to NovaMind Labs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

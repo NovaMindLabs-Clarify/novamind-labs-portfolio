@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js-reveal');</script>
+<title>Private Dining & Events — Ember & Salt</title>
+<meta name="description" content="Private dining, tasting menus and full buyouts at Ember & Salt.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231B2420'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='%23C9552C' font-family='Georgia'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Ember &amp; Salt</a>
+    <nav class="nav-links">
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="events.html" class="is-active" data-i18n="nav.events">Events</a>
+      <a href="blog.html" data-i18n="nav.blog">Journal</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Reserve a Table</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="menu.html" data-i18n="nav.menu">Menu</a>
+  <a href="about.html" data-i18n="nav.about">About</a>
+  <a href="events.html" data-i18n="nav.events">Events</a>
+  <a href="blog.html" data-i18n="nav.blog">Journal</a>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button></div>
+</nav>
+
+<main>
+  <section class="section" style="padding-top:calc(var(--header-h) + 56px); padding-bottom:0">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow" data-i18n="events.eyebrow">Private Dining</span>
+        <h1 data-i18n="events.title">Host something at Ember & Salt</h1>
+        <p data-i18n="events.lead">From an intimate dinner to a full buyout — three ways to host with us.</p>
+      </div>
+      <div class="card-grid reveal">
+        <div class="info-card">
+          <img src="https://picsum.photos/seed/embersalt-chefstable/500/380" alt="Chef's table">
+          <div class="info-card-body"><h3 data-i18n="event.1.name">Chef's Table</h3><p data-i18n="event.1.desc">Up to 8 guests, seated at the kitchen counter with a multi-course tasting menu.</p></div>
+        </div>
+        <div class="info-card">
+          <img src="https://picsum.photos/seed/embersalt-privateroom/500/380" alt="Private dining room">
+          <div class="info-card-body"><h3 data-i18n="event.2.name">Private Dining Room</h3><p data-i18n="event.2.desc">Up to 24 guests, a separate room off the main dining room, custom set menu.</p></div>
+        </div>
+        <div class="info-card">
+          <img src="https://picsum.photos/seed/embersalt-buyout/500/380" alt="Full restaurant buyout">
+          <div class="info-card-body"><h3 data-i18n="event.3.name">Full Buyout</h3><p data-i18n="event.3.desc">Up to 60 guests, the entire restaurant, fully customized menu and bar.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:640px">
+      <div class="reveal card" style="background:#fff; border:1px solid var(--border-light); border-radius:var(--radius-lg); padding:40px">
+        <h2 data-i18n="events.form.title">Request a Date</h2>
+        <form data-form novalidate>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="ev-name" data-i18n="events.form.name">Your name</label>
+              <input id="ev-name" name="name" type="text" required data-i18n-placeholder="events.form.namePh" placeholder="Jane Doe">
+            </div>
+            <div class="form-row">
+              <label for="ev-guests" data-i18n="events.form.guests">Number of guests</label>
+              <input id="ev-guests" name="guests" type="number" min="1" required data-i18n-placeholder="events.form.guestsPh" placeholder="12">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="ev-date" data-i18n="events.form.date">Preferred date</label>
+            <input id="ev-date" name="date" type="date" required>
+          </div>
+          <div class="form-row">
+            <label for="ev-message" data-i18n="events.form.message">Tell us about the occasion</label>
+            <textarea id="ev-message" name="message" rows="4" data-i18n-placeholder="events.form.messagePh" placeholder="A birthday dinner for 12, looking at a Saturday in October…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="events.form.submit">Send Request</button>
+          <div class="form-success"><span>✓</span><span data-i18n="events.form.success">Thanks — we'll follow up within a day to confirm availability.</span></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Ember &amp; Salt</a>
+        <p data-i18n="footer.tagline">Wood-fired, seasonal, unhurried.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5 data-i18n="footer.explore">Explore</h5>
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="blog.html" data-i18n="nav.blog">Journal</a>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.visit">Visit</h5>
+          <span data-i18n="info.address.value">214 Foundry Lane, Riverside District</span>
+          <span data-i18n="info.phone.value">+1 (555) 812-4470</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Ember & Salt. All rights reserved.</span>
+      <span data-i18n="footer.credit">Business-tier example — part of the NovaMind Labs portfolio.</span>
+      <a href="../work.html" data-i18n="footer.backToPortfolio">← Back to NovaMind Labs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

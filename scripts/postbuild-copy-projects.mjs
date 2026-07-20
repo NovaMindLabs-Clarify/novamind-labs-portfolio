@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = resolve(root, 'dist');
 
-const plainSites = ['1_site', '2_site', '3_site', '4_site', '5_site'];
+const plainSites = ['1_site', '2_site', '3_site', '4_site', '5_site', '7_site'];
 
 for (const name of plainSites) {
   const src = resolve(root, name);

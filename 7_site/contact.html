@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js-reveal');</script>
+<title>Reservations — Ember & Salt</title>
+<meta name="description" content="Reserve a table at Ember & Salt — Riverside District, open Tuesday through Sunday.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231B2420'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='%23C9552C' font-family='Georgia'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Ember &amp; Salt</a>
+    <nav class="nav-links">
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="events.html" data-i18n="nav.events">Events</a>
+      <a href="blog.html" data-i18n="nav.blog">Journal</a>
+      <a href="contact.html" class="is-active" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Reserve a Table</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="menu.html" data-i18n="nav.menu">Menu</a>
+  <a href="about.html" data-i18n="nav.about">About</a>
+  <a href="events.html" data-i18n="nav.events">Events</a>
+  <a href="blog.html" data-i18n="nav.blog">Journal</a>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button></div>
+</nav>
+
+<main>
+  <section class="section" style="padding-top:calc(var(--header-h) + 56px)">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Reservations</span>
+        <h1 data-i18n="contact.title">Reserve a table</h1>
+        <p data-i18n="contact.lead">For parties of 8 or more, use the private dining form instead.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="reveal card" style="background:#fff; border:1px solid var(--border-light); border-radius:var(--radius-lg); padding:36px" data-form novalidate>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="c-name" data-i18n="contact.form.name">Your name</label>
+              <input id="c-name" name="name" type="text" required data-i18n-placeholder="contact.form.namePh" placeholder="Jane Doe">
+            </div>
+            <div class="form-row">
+              <label for="c-phone" data-i18n="contact.form.phone">Phone number</label>
+              <input id="c-phone" name="phone" type="tel" required data-i18n-placeholder="contact.form.phonePh" placeholder="+1 (555) 000-0000">
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="c-date" data-i18n="contact.form.date">Date</label>
+              <input id="c-date" name="date" type="date" required>
+            </div>
+            <div class="form-row">
+              <label for="c-time" data-i18n="contact.form.time">Time</label>
+              <input id="c-time" name="time" type="time" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="c-guests" data-i18n="contact.form.guests">Guests</label>
+            <input id="c-guests" name="guests" type="number" min="1" max="7" required data-i18n-placeholder="contact.form.guestsPh" placeholder="2">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Request Reservation</button>
+          <p style="font-size:0.8rem; color:var(--ink-dim); margin-top:12px" data-i18n="contact.form.note">We'll confirm by phone or text within a few hours during service.</p>
+          <div class="form-success"><span>✓</span><span data-i18n="contact.form.success">Thanks — we'll confirm your table shortly.</span></div>
+        </form>
+
+        <div class="reveal">
+          <div class="card" style="padding:32px; background:var(--charcoal); color:var(--cream)">
+            <p><strong data-i18n="info.hours.label">Hours</strong><br><span data-i18n="info.hours.value">Tue–Sun 17:00–23:00 · Closed Mondays</span></p>
+            <p><strong data-i18n="info.address.label">Address</strong><br><span data-i18n="info.address.value">214 Foundry Lane, Riverside District</span></p>
+            <p style="margin-bottom:0"><strong data-i18n="info.phone.label">Phone</strong><br><span data-i18n="info.phone.value">+1 (555) 812-4470</span></p>
+          </div>
+          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=restaurant+riverside+district&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Ember &amp; Salt</a>
+        <p data-i18n="footer.tagline">Wood-fired, seasonal, unhurried.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5 data-i18n="footer.explore">Explore</h5>
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="blog.html" data-i18n="nav.blog">Journal</a>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.visit">Visit</h5>
+          <span data-i18n="info.address.value">214 Foundry Lane, Riverside District</span>
+          <span data-i18n="info.phone.value">+1 (555) 812-4470</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Ember & Salt. All rights reserved.</span>
+      <span data-i18n="footer.credit">Business-tier example — part of the NovaMind Labs portfolio.</span>
+      <a href="../work.html" data-i18n="footer.backToPortfolio">← Back to NovaMind Labs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js-reveal');</script>
+<title>Menu — Ember & Salt</title>
+<meta name="description" content="Starters, mains, desserts and drinks at Ember & Salt — a seasonal, wood-fired American menu.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231B2420'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='%23C9552C' font-family='Georgia'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Ember &amp; Salt</a>
+    <nav class="nav-links">
+      <a href="menu.html" class="is-active" data-i18n="nav.menu">Menu</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="events.html" data-i18n="nav.events">Events</a>
+      <a href="blog.html" data-i18n="nav.blog">Journal</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Reserve a Table</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="menu.html" data-i18n="nav.menu">Menu</a>
+  <a href="about.html" data-i18n="nav.about">About</a>
+  <a href="events.html" data-i18n="nav.events">Events</a>
+  <a href="blog.html" data-i18n="nav.blog">Journal</a>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button></div>
+</nav>
+
+<main>
+  <section class="section" style="padding-top:calc(var(--header-h) + 56px)">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow" data-i18n="menu.eyebrow">Menu</span>
+        <h1 data-i18n="menu.title">Seasonal, wood-fired, honest</h1>
+        <p data-i18n="menu.lead">The menu changes with the season — this is what's on it right now.</p>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="menu-tab is-active" data-tab="starters" data-i18n="menu.tab.starters">Starters</button>
+        <button class="menu-tab" data-tab="mains" data-i18n="menu.tab.mains">Mains</button>
+        <button class="menu-tab" data-tab="desserts" data-i18n="menu.tab.desserts">Desserts</button>
+        <button class="menu-tab" data-tab="drinks" data-i18n="menu.tab.drinks">Drinks</button>
+      </div>
+
+      <div class="menu-panel is-active" data-panel="starters">
+        <div class="menu-grid">
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="starter.1.name">Charred Octopus</div><p class="menu-item-desc" data-i18n="starter.1.desc">White beans, calabrian chili, lemon</p></div><span class="menu-item-price" data-i18n="starter.1.price">$19</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="starter.2.name">Hearth Bread & Cultured Butter</div><p class="menu-item-desc" data-i18n="starter.2.desc">Whipped brown butter, sea salt</p></div><span class="menu-item-price" data-i18n="starter.2.price">$9</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="starter.3.name">Autumn Squash Soup</div><p class="menu-item-desc" data-i18n="starter.3.desc">Brown butter, toasted seeds, sage</p></div><span class="menu-item-price" data-i18n="starter.3.price">$13</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="starter.4.name">Beef Tartare</div><p class="menu-item-desc" data-i18n="starter.4.desc">Smoked egg yolk, rye crisp, capers</p></div><span class="menu-item-price" data-i18n="starter.4.price">$18</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="starter.5.name">Grilled Little Gem</div><p class="menu-item-desc" data-i18n="starter.5.desc">Anchovy dressing, pecorino, breadcrumb</p></div><span class="menu-item-price" data-i18n="starter.5.price">$14</span></div>
+        </div>
+      </div>
+
+      <div class="menu-panel" data-panel="mains">
+        <div class="menu-grid">
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="main.1.name">Wood-Fired Half Chicken</div><p class="menu-item-desc" data-i18n="main.1.desc">Charred lemon, herb jus, roasted potatoes</p></div><span class="menu-item-price" data-i18n="main.1.price">$32</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="main.2.name">Dry-Aged Ribeye (14oz)</div><p class="menu-item-desc" data-i18n="main.2.desc">Bone marrow butter, grilled onion</p></div><span class="menu-item-price" data-i18n="main.2.price">$58</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="main.3.name">Hearth-Roasted Salmon</div><p class="menu-item-desc" data-i18n="main.3.desc">Brown butter, capers, charred fennel</p></div><span class="menu-item-price" data-i18n="main.3.price">$34</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="main.4.name">Wild Mushroom Risotto</div><p class="menu-item-desc" data-i18n="main.4.desc">Parmesan, thyme, black truffle</p></div><span class="menu-item-price" data-i18n="main.4.price">$28</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="main.5.name">Braised Short Rib</div><p class="menu-item-desc" data-i18n="main.5.desc">Celery root purée, red wine jus</p></div><span class="menu-item-price" data-i18n="main.5.price">$36</span></div>
+        </div>
+      </div>
+
+      <div class="menu-panel" data-panel="desserts">
+        <div class="menu-grid">
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="dessert.1.name">Burnt Basque Cheesecake</div><p class="menu-item-desc" data-i18n="dessert.1.desc">Macerated berries</p></div><span class="menu-item-price" data-i18n="dessert.1.price">$12</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="dessert.2.name">Dark Chocolate Tart</div><p class="menu-item-desc" data-i18n="dessert.2.desc">Sea salt, olive oil, hazelnut</p></div><span class="menu-item-price" data-i18n="dessert.2.price">$13</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="dessert.3.name">Roasted Pear</div><p class="menu-item-desc" data-i18n="dessert.3.desc">Brown butter ice cream, walnut crumble</p></div><span class="menu-item-price" data-i18n="dessert.3.price">$11</span></div>
+        </div>
+      </div>
+
+      <div class="menu-panel" data-panel="drinks">
+        <div class="menu-grid">
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="drink.1.name">Ember Old Fashioned</div><p class="menu-item-desc" data-i18n="drink.1.desc">Smoked bourbon, demerara, orange</p></div><span class="menu-item-price" data-i18n="drink.1.price">$16</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="drink.2.name">Riverside Sour</div><p class="menu-item-desc" data-i18n="drink.2.desc">Rye, lemon, egg white, bitters</p></div><span class="menu-item-price" data-i18n="drink.2.price">$15</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-i18n="drink.3.name">House Red / White</div><p class="menu-item-desc" data-i18n="drink.3.desc">Ask about our rotating by-the-glass list</p></div><span class="menu-item-price" data-i18n="drink.3.price">$13</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Ember &amp; Salt</a>
+        <p data-i18n="footer.tagline">Wood-fired, seasonal, unhurried.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5 data-i18n="footer.explore">Explore</h5>
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="blog.html" data-i18n="nav.blog">Journal</a>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.visit">Visit</h5>
+          <span data-i18n="info.address.value">214 Foundry Lane, Riverside District</span>
+          <span data-i18n="info.phone.value">+1 (555) 812-4470</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Ember & Salt. All rights reserved.</span>
+      <span data-i18n="footer.credit">Business-tier example — part of the NovaMind Labs portfolio.</span>
+      <a href="../work.html" data-i18n="footer.backToPortfolio">← Back to NovaMind Labs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
